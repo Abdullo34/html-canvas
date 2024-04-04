@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <canvas id="canvas" width="900" height="800">
+
+    </canvas>
+
+    <script type="text/javascript">
+
+        var canvas = document.getElementById('canvas')
+        var ctx = canvas.getContext('2d')
+
+
+        // ctx.fillRect(200,100,300,300) buyab beradi 
+        // ctx.strokeRect(200, 100, 300, 300)  chizib beradi lekin buyab bermaydi
+        // ctx.rect(200, 100, 400, 300)   chizadi lekin kursatmaydi kurinishi uchun ctx.rect() methodan foydalanish kerak buladi
+        // ctx.stroke()
+        // ctx.fill() methodi esa  canvani ichini tuldirib beradi
+
+        // ctx.fillStyle = 'dodgerblue'
+        // ctx.fillRect(400,400,200,200)
+
+        ctx.lineWidth = 20
+        ctx.strokeStyle = 'rgb(0,128,0)'
+        ctx.moveTo(50, 50)
+        ctx.lineTo(100, 100)
+        ctx.stroke()
+
+
+
+
+    </script>
+</body>
+
+</html>
