@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <canvas id="canvas" width="900" height="800">
+
+    </canvas>
+
+    <script type="text/javascript">
+
+        var canvas = document.getElementById('canvas')
+        var ctx = canvas.getContext('2d')
+
+
+        ctx.beginPath()
+        ctx.moveTo(100, 300)
+        ctx.lineTo(300, 100)
+        ctx.lineTo(500, 300)
+        ctx.closePath()
+        ctx.stroke()
+
+        ctx.fillStyle ='red'
+        ctx.beginPath()
+        ctx.moveTo(100, 400)
+        ctx.lineTo(300, 600)
+        ctx.lineTo(500, 400)
+        ctx.closePath()
+        ctx.fill()
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
